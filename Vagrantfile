@@ -9,6 +9,10 @@ $script = <<-SCRIPT
   sudo dnf -y install cpan
   sudo dnf -y install httpd mod_perl perl-CGI perl-HTML-Template-Expr
   echo yes | sudo cpan 'CGI::Application::Plugin::Authentication'
+  sudo rm -rf /var/www
+  sudo ln -s /vagrant /var/www
+  sudo systemctl enable httpd.service
+  sudo systemctl start httpd.service
 SCRIPT
 
 Vagrant.configure("2") do |config|
