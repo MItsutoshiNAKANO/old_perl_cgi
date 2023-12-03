@@ -1,7 +1,7 @@
 #! /usr/bin/env perl
 
 print <<'END_OF_HEAD';
-Content-Type: text/html charset=UTF-8
+Content-Type: text/html; charset=UTF-8
 
 <!DOCTYPE html>
 <html lang="en">
