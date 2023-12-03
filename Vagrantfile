@@ -11,6 +11,7 @@ $script = <<-SCRIPT
   echo yes | sudo cpan 'CGI::Application::Plugin::Authentication'
   sudo rm -rf /var/www
   sudo ln -s /vagrant /var/www
+  sudo install -b -m 644 -o root -g root /vagrant/root/etc/selinux/config /etc/selinux
   sudo systemctl enable httpd.service
   sudo systemctl start httpd.service
 SCRIPT
