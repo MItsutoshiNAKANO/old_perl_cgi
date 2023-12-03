@@ -16,7 +16,7 @@ END_OF_HEAD
 
 foreach my $key (keys(%ENV)) {
     my $value = $ENV{$key};
-    print "<p>$key=$value</p>\n"
+    print "<p>$key=$value</p>\n";
 }
 
 print <<'END_OF_TAIL';
