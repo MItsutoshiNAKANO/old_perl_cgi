@@ -9,6 +9,8 @@ $script = <<-SCRIPT
   sudo dnf -y install cpan
   sudo dnf -y install httpd mod_perl perl-CGI perl-HTML-Template-Expr
   echo yes | sudo cpan 'CGI::Application::Plugin::Authentication'
+  sudo cpan 'CGI::Application::Plugin::Session'
+  sudo cpan 'CGI::Application::Plugin::Authentication::Store::Session'
   sudo rm -rf /var/www
   sudo ln -s /vagrant /var/www
   sudo install -b -m 644 -o root -g root /vagrant/root/etc/selinux/config /etc/selinux

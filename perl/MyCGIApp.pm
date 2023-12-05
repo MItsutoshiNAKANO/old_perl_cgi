@@ -1,6 +1,8 @@
 package MyCGIApp;
 
+use v5.32;
 use strict;
+use warnings;
 use utf8;
 
 use base qw(CGI::Application); # make sure this occurs before you load the plugin

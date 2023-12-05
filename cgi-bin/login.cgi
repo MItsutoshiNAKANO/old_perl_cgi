@@ -1,6 +1,8 @@
 #! /usr/bin/env perl
 
+use v5.32;
 use strict;
+use warnings;
 use utf8;
 use File::Basename;
 use lib '/var/www/perl';
